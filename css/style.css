@@ -1,1 +1,40 @@
 *,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: black;
+    --secondary: white;
+    --headerAndfooter: #91BAD6;
+    --darkmain: #2C6071;
+    --lightmain: #7C9AA4;
+}
+img[alt="logo"]{
+    width: 5rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+:is(header,footer){
+    background-color: var(--headerAndfooter);
+}
+
+body{
+    display: grid;
+    background-color: var(--lightmain);
+    grid-template-rows: auto minmax(100%,400dvh) auto;
+}
+
+.navbar .collapse a{
+    transition: all .5s;
+    &:hover{
+        transform: scale(1.2);
+        background-color: dimgray;
+    }
+
+}
+
