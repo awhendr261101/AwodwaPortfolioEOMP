@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
 *,
 *::after,
 *::before{
@@ -11,6 +14,7 @@
     --secondary: white;
     --headerAndfooter: #91BAD6;
     --darkmain: #2C6071;
+    --about: #1a3e4a;
     --lightmain: #7C9AA4;
 }
 img[alt="logo"]{
@@ -18,6 +22,41 @@ img[alt="logo"]{
     object-fit: cover;
     object-position: center;
 }
+
+img[alt="levi"]{
+    width: 20rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* style the home section */
+#home{
+    background-color: #fff;
+    & .row{
+        padding-top: 10rem;
+    }
+    & #landingText{
+        font-family: "Libre Caslon Text", serif;
+        padding-top: 6.5rem;
+        text-align: center;
+        background-color: silver;
+        height: 20rem;
+        font-weight: bold;
+        font-size: x-large;
+        & h1{
+            font-weight: bolder;
+            font-size: 3rem ;
+        }
+    }
+    & img{
+        margin: auto;
+        
+    }
+
+}
+
+
+
 
 :is(header,footer){
     background-color: var(--headerAndfooter);
@@ -37,4 +76,5 @@ body{
     }
 
 }
+
 
