@@ -17,17 +17,33 @@
     --about: #1a3e4a;
     --lightmain: #7C9AA4;
 }
+
+:is(header,footer){
+    background-color: var(--headerAndfooter);
+}
+
+body{
+    display: grid;
+    background-color: var(--lightmain);
+    grid-template-rows: auto minmax(100%,400dvh) auto;
+}
+
+.navbar .collapse a{
+    transition: all .5s;
+    &:hover{
+        transform: scale(1.2);
+        background-color: dimgray;
+    }
+
+}
+
 img[alt="logo"]{
     width: 5rem;
     object-fit: cover;
     object-position: center;
 }
 
-img[alt="levi"]{
-    width: 20rem;
-    object-fit: cover;
-    object-position: center;
-}
+
 
 /* style the home section */
 #home{
@@ -55,26 +71,39 @@ img[alt="levi"]{
 
 }
 
-
-
-
-:is(header,footer){
-    background-color: var(--headerAndfooter);
+img[alt="levi"]{
+    width: 20rem;
+    object-fit: cover;
+    object-position: center;
 }
 
-body{
-    display: grid;
-    background-color: var(--lightmain);
-    grid-template-rows: auto minmax(100%,400dvh) auto;
-}
+/* Styling the about section */
+#about{
+    background-color: var(--darkmain);
 
-.navbar .collapse a{
-    transition: all .5s;
-    &:hover{
-        transform: scale(1.2);
-        background-color: dimgray;
+    & .row {
+        & .about{
+        font-family: "Jacques Francois Shadow", serif;
+        background-color: var(--about);
+        padding-block: 1rem;
+        text-align: center;
+        font-size: x-large;
+        color: var(--secondary);
+        }
+
+        & .paragraph{
+            width: 80%;
+            margin: auto;
+            font-size: x-large;
+            padding-block: 5rem;
+        }
     }
 
 }
+
+
+
+
+
 
 
