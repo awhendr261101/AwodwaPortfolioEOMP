@@ -25,7 +25,7 @@
 body{
     display: grid;
     background-color: var(--lightmain);
-    grid-template-rows: auto minmax(100%,400dvh) auto;
+    grid-template-rows: auto minmax(100%,700dvh) auto;
 }
 
 .navbar .collapse a{
@@ -100,6 +100,67 @@ img[alt="levi"]{
     }
 
 }
+
+/* Resume section  */
+
+/* Skills section  */
+.icons{
+    
+}
+/* Styling the projects section  */
+#projectCards{
+    text-align: center;
+    & h2{
+        padding-block: 4rem;
+        font-family: "Jacques Francois Shadow", serif;
+        color: #fff;
+    }
+
+}
+
+img[alt="calculator"]{
+   height: 5rem;
+   width: 5rem;
+
+}
+.card{
+    width: 25rem;
+    height: 25rem;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    & .buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+#testimonials{
+    text-align: center;
+    & img{
+        width: 10rem;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+#reachme{
+    background-color: var(--about);
+    border-radius: 2.1rem;
+    & .col{
+        padding-top: 5rem;
+        align-items: center;
+        & .reachme{
+            background-color: #fff;
+            height: 5rem;
+            width: 5rem;
+        }
+    }
+}
+
+
 
 
 
